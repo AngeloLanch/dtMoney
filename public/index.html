@@ -1,0 +1,56 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<script src="./index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+
+<<!DOCTYPE html>
+<html>
+  <head>
+    <title>Removing Markers</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <input onclick="clearMarkers();" type="button" value="Hide Markers" />
+      <input onclick="showMarkers();" type="button" value="Show All Markers" />
+      <input onclick="deleteMarkers();" type="button" value="Delete Markers" />
+    </div>
+    <div id="map"></div>
+    <p>Click on the map to add markers.</p>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB-7uMXPFiE-6ob1lM5xMGaFKh04HJ9Do&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+    <script type="text/javascript">
+      var socket = io('http://localhost:3000');//ouvindo a conexao via socket 
+
+      
+
+      $('#mapa').submit(function(event){
+        event.preventDefault();//impede de enviar esse formulario
+
+        //variaveis que devem receber do backend e preencher no mapa
+        var lat = $('input[id=lat]').val();
+        var lng = $('input[id=lng]').val();
+        
+        //se o comprimento das var's for maior que 0
+        if(lat.length && lng.length > 0) {
+          
+          var latLngObject = {
+             lat: lat,
+             lng: lng,
+          };
+          //enviar o objeto da lat e lng pro servidor
+          //sendPosition é o nome do evento que será passado para o back-end
+          socket.emit('sendPosition', latLngObject);  
+        }
+      });
+    </script>
+  </body>
+</html>
