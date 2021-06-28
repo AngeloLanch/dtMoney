@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+## Sobre o Projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido para o desafio de desenvolvedor junior de Foton.
+O sistema é um buscador de livros, que utiliza a API da googleBooks, para encontrar títulos, autores e capas.
 
-## Available Scripts
+### Tecnologias utilizadas
 
-In the project directory, you can run:
+Este projeto foi feito utilizando as tecnologias
+* [React](https://reactjs.org/docs/getting-started.html)
+* [React-router](https://reactrouter.com/web/guides/quick-start)
+* [Typescript](https://www.typescriptlang.org/docs/)
+* [StyledComponents](https://styled-components.com/docs)
+* [Axios](https://github.com/axios/axios)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- GETTING STARTED -->
+## Iniciando o projeto
 
-### `yarn test`
+Para rodar o projeto, basta seguir os passos:
+1 - Fazer uma cópia do projeto através do Git ou download direto.
+2 - Instalar as dependências (foi utilizado yan nesta aplicação):
+  ``yarn install``
+3 - Rodar o projeto:
+  ``yarn start``
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### Pre-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este projeto necessita das sequintes dependências:
+ - gerenciador de pacotes Yarn
+ - NodeJs (para rodar o React)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Melhorias
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O projeto ainda precisa de melhorias, tias quais:
+  - Implementar os dados salvos da API para criação de card books, quando o usuário pesquisar por um título
+  - Implementar os dados salvos da API para customização da tela inicial 'Home'
+  - Nova proposta de layout Desktop
+  - Melhores imagens para apresentação Desktop
 
-### `yarn eject`
+<!-- CONTRIBUTING -->
+## Contribuições são bem vindas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Para contribuir com o projeto basta seguir os passos?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Dê um Fork no projeto
+2. Cria sua branch
+3. Commit suas alterações
+4. Dê um Push na sua Branch
+5. Abra uma PR ( aqui mesmo no github ele oferece esta opção)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+<!-- LICENSE -->
+## Licensa
+Este projeto está sobre a licensa MIT.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- CONTACT -->
+## Contato
 
-### Code Splitting
+Angelo Lanche - [@MacacoHighTech](https://twitter.com/MacacoHighTech)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Project Link: [https://github.com/AngeloLanch/frontend-challenge](https://github.com/AngeloLanch/frontend-challenge)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+* [Slick Carousel](https://kenwheeler.github.io/slick)
+* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* [Sticky Kit](http://leafo.net/sticky-kit)
+* [JVectorMap](http://jvectormap.com)
+* [Font Awesome](https://fontawesome.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
